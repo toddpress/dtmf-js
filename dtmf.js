@@ -7,18 +7,23 @@ const [rowFreqs, colFreqs] = [[
           852, // [7]   [8]   [9]   [C]
           941],// [*]   [0]   [#]   [D]
                 [1209, 1336, 1477, 1633]];
-                // Hi Freqs(Hz) 
+                // Hi Freqs(Hz)
+
+const toneSymbolsAsc = '123A456B789C*0#D';
 const frequencies = [rowFreqs, colFreqs];
+
 function getKeySequence(string) { 
   return string.match(/(\d|\*|#|A-D)/g); 
 }
+
 function getFreqsForKey(key) {
-    let index = '123A456B789C*0#D'.indexOf(key);
+    let index = toneSymbolsAsc.indexOf(key);
     return [rowFreqs[Math.floor(index / 4)], colFreqs[index % 4]];
 }
+
 function getKeyForFreqs(lo, hi) {
   let index = rowFreqs.indexOf(lo) * 4 + colFreqs.indexOf(hi);
-  return '123A456B789C*0#D'[index] || '';
+  return toneSymbolsAsc[index] || '';
 }
 
-export { frequencies, getKeySequence, getFreqsForKey, getKeyForFreqs };
+export { frequencies, toneSymbolsAsc, getKeySequence, getFreqsForKey, getKeyForFreqs };
