@@ -1,13 +1,13 @@
 // Utility set for working with Dual Tone Multifrequency
 // in javascript
 const [rowFreqs, colFreqs] = [[
-          // Hi Freqs(Hz)
+          // Lo Freq(Hz)
           697, // [1]   [2]   [3]   [A]
           770, // [4]   [5]   [6]   [B]
           852, // [7]   [8]   [9]   [C]
           941],// [*]   [0]   [#]   [D]
                 [1209, 1336, 1477, 1633]];
-                // Lo Freq(Hz)
+                // Hi Freqs(Hz) 
 const frequencies = [rowFreqs, colFreqs];
 function getKeySequence(string) { 
   return string.match(/(\d|\*|#|A-D)/g); 
