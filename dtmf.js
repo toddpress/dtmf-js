@@ -1,4 +1,4 @@
-// Utility set for working with Dual Tone Multi Frequency
+// Utility set for working with Dual Tone Multifrequency
 // in javascript
 const [rowFreqs, colFreqs] = [[
           // Hi Freqs(Hz)
