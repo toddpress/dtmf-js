@@ -1,0 +1,22 @@
+{
+  "name": "dtmf",
+  "version": "1.0.0",
+  "description": "TouchTone utility set for working with DTMF tones in javascript applications",
+  "main": "dtmf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DTMF",
+    "dual",
+    "tone",
+    "multiple",
+    "frequency",
+    "touch",
+    "tones",
+    "module",
+    "es2015"
+  ],
+  "author": "toddpress",
+  "license": "MIT"
+}
